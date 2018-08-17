@@ -6,6 +6,7 @@
     width: 100%;
     padding: 0;
     margin: 0 auto;
+    height: 100%;
 
 
 }
@@ -22,7 +23,11 @@
     backface-visibility: hidden;
     opacity: .8;
     background-color: #734523!important;
-    padding: 20px;
+    position: fixed;
+    transition: top 0.3s;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
 }
 .navbar a {
@@ -65,41 +70,56 @@
 /***** Top content *****/
  
 .jumbotron {
-    background: url(./images/bandbybarn1.jpeg);
-    background-repeat: no-repeat;
-    height: 900px;
-    width: 100%;
-    background-size: cover;
-    z-index: 999;
-    position: center center;
-    opacity: .8;   
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/bandoncar2.jpeg");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
 }
-.jumbotron h1 {
-    font-size: 120px;
+
+.hero-text {
     text-align: center;
-    margin-bottom: 60px;
-    font-weight: bold;
-    letter-spacing: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
 }
-.jumbotron a {
+
+.hero-text a {
     font-weight: bold;
-    color:#2F4F4F;
+    color: #734523;
+    font-size: 70px;
 }
-.jumbotron a:hover {
-    color: #2F4F4F;
-}
-.jumbotron h2 {
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    text-decoration: none;
+.hero-text a:hover {
     color: white;
 }
-.jumbotron h3 {
+.hero-text h1 {
+    font-size: 140px;
+    flex-wrap: nowrap;
+    letter-spacing: 10px;
+
+}
+.hero-text h2 {
+    font-weight: bold;
+    font-size: 70px;
     text-align: center;
-    font-size: 80px;
+    text-decoration: none;
+    color: #734523;
+}
+.hero-text h3 {
+    text-align: center;
+    font-size: 60px;
     color: #8F8575;
+    font-weight: bold;
+}
+img {
+    height: 800px;
+    width: 100%;
 }
 
 /* Upcoming Shows Stylingg */
@@ -109,7 +129,7 @@
 }
 .section1 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     color: #734523;
     font-weight: bold;
 }
@@ -160,17 +180,17 @@ td {
 .navbar-dark .navbar-toggler:focus { background: #333; outline: 0; }
 .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
 
-.jumbotron h1 {
+.hero-text h1 {
     font-size: 60px;
     margin-bottom: 70px;
     letter-spacing: 10px;
     font-weight: bold;
 }
-.jumbotron h2 {
+.hero-text h2 {
     font-size: 30px;
 
 }
-.jumbotron h3 {
+.hero-text h3 {
     font-size: 50px;
     color: white!important;
 }
