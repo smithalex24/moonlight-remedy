@@ -1,8 +1,12 @@
+/* Global Styling */
 
-html {
-    font-family: 'Cabin Sketch', cursive;
-    background: #2F4F4F;
+.mainbody {
+    font-family: 'Amatic SC', cursive;
+    background: /*#2F4F4F*/#7E715D;
     width: 100%;
+    padding: 0;
+    margin: 0 auto;
+
 
 }
 
@@ -17,16 +21,23 @@ html {
     transition: all .6s;
     backface-visibility: hidden;
     opacity: .8;
-    text-decoration: none;
-    font-family: 'Cabin Sketch', cursive;
+    background-color: #734523!important;
+    padding: 20px;
 
-
+}
+.navbar a {
+    color: white!important;
+}
+.navbar a:hover {
+    color:#2F4F4F!important;
+    font-size: 20px!important;
 }
 .navbar-nav .nav-link a{
     color: white;
+
 }
 .navbar-dark .navbar-nav {
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     font-weight: 600;
 }
@@ -51,13 +62,95 @@ html {
 }
  
 
-a {
-	color: white!important;
+/***** Top content *****/
+ 
+.jumbotron {
+    background: url(./images/bandbybarn1.jpeg);
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    z-index: 999;
+    position: center center;
+    opacity: .8;   
+
 }
+.jumbotron h1 {
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    letter-spacing: 20px;
+}
+.jumbotron a {
+    font-weight: bold;
+    color:#2F4F4F;
+}
+.jumbotron a:hover {
+    color: #2F4F4F;
+}
+.jumbotron h2 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.jumbotron h3 {
+    text-align: center;
+    font-size: 80px;
+    color: #8F8575;
+}
+
+/* Upcoming Shows Stylingg */
+
+.section1 {
+    margin-top: 300px;
+}
+.section1 h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #734523;
+    font-weight: bold;
+}
+table, th, td {
+    border: 2px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+td {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styling */
+
 @media (min-width: 768px) and (max-width: 991px) {
  
- .navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
- 
+ .navbar-expand-md .navbar-nav .nav-link { 
+    padding-left: 0.6rem; 
+    padding-right: 0.6rem; }
+}
+@media screen and (max-width: 992px){
+    .jumbotron h1{
+        font-size: 80px;
+    }
+    .jumbotron h2, .jumbotron h3{
+        font-size: 50px;
+    }
 }
  
 @media (max-width: 767px) {
@@ -66,20 +159,33 @@ a {
 .navbar-dark .navbar-toggler { border-color: #444; }
 .navbar-dark .navbar-toggler:focus { background: #333; outline: 0; }
 .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+
+.jumbotron h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+    letter-spacing: 10px;
+    font-weight: bold;
 }
-/***** Top content *****/
- 
+.jumbotron h2 {
+    font-size: 30px;
+
+}
+.jumbotron h3 {
+    font-size: 50px;
+    color: white!important;
+}
 .jumbotron {
-    background: url(./images/mrlogo.jpg);
-    background-repeat: no-repeat;
-    height: 700px;
+    background-size: 100% 100%;
+    height: 500px;
+    
+}
+table, th, td {
     width: 100%;
-    background-size: cover;
-    z-index: 999;
-    position: relative;
-
-   
+    font-size: 20px;
+}
+iframe {
+    width: 150px;
+    height: 150px;
 }
 
-
-
+}
