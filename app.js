@@ -33,6 +33,14 @@ $(document).ready(function(){
 	  }
 	  prevScrollpos = currentScrollPos;
 	}
+  // When the user clicks on <div>, open the popup
+  $('#popup').on('click', function(event) {
+    console.log('button was clicked');
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
+  });
+
 
 });
 
