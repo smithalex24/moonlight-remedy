@@ -1,4 +1,7 @@
 $(document).ready(function(){
+$(document).on('click',function(){
+  $('.collapse').collapse('hide');
+})
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -33,8 +36,8 @@ $(document).ready(function(){
 	  }
 	  prevScrollpos = currentScrollPos;
 	}
-  // When the user clicks on <div>, open the popup
 
+    
 
 });
 
