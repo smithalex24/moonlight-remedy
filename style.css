@@ -194,12 +194,20 @@ table, th, td {
 }
 table {
     width: 100%;
+   
 }
 td {
     margin-top: 10px;
+    padding: 10px;
+
 }
-
-
+th {
+  padding: 15px;
+  background-color: #604A32;
+}
+td {
+  background-color: #734523;
+}
 /*Music & Media Styling */
 
 
