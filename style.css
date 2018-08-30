@@ -71,10 +71,12 @@
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 50%;
+  top: 100%;
+  height: 100%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 /* Style the icon bar links */
@@ -94,29 +96,26 @@
 }
 
 .facebook {
-  background: #3B5998;
+  background: #734523;
   color: white;
 }
 
 .instagram{
-  background: #55ACEE;
+  background: #2F4F4F;
   color: white;
 }
 
 .google {
-  background: #dd4b39;
+  background: #734523;
   color: white;
 }
 
-.linkedin {
-  background: #007bb5;
+.twitter {
+  background: #2F4F4F;
   color: white;
 }
 
-.youtube {
-  background: #bb0000;
-  color: white;
-}
+
  
 
 /***** Top content *****/
@@ -135,7 +134,7 @@
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -183,7 +182,7 @@ img {
 .section1 h1 {
     text-align: center;
     font-size: 70px;
-    color: #734523;
+   /* color: #734523;*/
     font-weight: bold;
 }
 table, th, td {
@@ -210,12 +209,43 @@ td {
 .section2 h1 {
     text-align: center;
     font-size: 70px;
-    color: #734523;
+    /*color: #734523;*/
     font-weight: bold;
+    margin-bottom: 50px;
 }
+iframe {
+   display: inline-block;
+   width: 100%;
+   height: 600px;
+   margin-bottom: 80px;
+   border-radius: 10px;
+   border: 5px solid black;
 
+} 
 
+/* Footer Style */
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#734523;
+  color: black;
+  text-align: center;
+  opacity: .7;
+}
+.footer p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer a {
+  color: black;
+  font-weight: bold;
+}
+.footer a:hover {
+  color:#2F4F4F;
+}
 
 
 
@@ -238,7 +268,7 @@ td {
     }
 }
  
-@media (max-width: 767px) {
+@media (max-width: 600px) {
  
 .navbar.navbar-no-bg { background: #444; }
 .navbar-dark .navbar-toggler { border-color: #444; }
@@ -251,6 +281,8 @@ td {
     letter-spacing: 10px;
     font-weight: bold;
     margin-top: 20px;
+    line-height: 80px;
+    letter-spacing: 1px;
 
 }
 .hero-text h2 {
@@ -258,14 +290,17 @@ td {
 
 }
 .hero-text h3 {
-    font-size: 50px;
+    font-size: 45px;
     color: white!important;
 }
 .jumbotron {
     background-size: 100% 100%;
-    height: 700px;
+    height: 550px;
     margin-top: 10px;
     
+}
+.hero-text {
+  top: 55%;
 }
 table, th, td {
     width: 100%;
@@ -277,6 +312,10 @@ table, th, td {
 }
 td {
     height: 120px;
+}
+iframe {
+  width: 100%;
+  height: 270px;
 }
 
 }
