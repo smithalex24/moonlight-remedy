@@ -173,6 +173,19 @@ img {
     height: 800px;
     width: 100%;
 }
+.flash {
+   animation-name: flash;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: #8F8575;}
+    to {color: #2F4F4F;}
+}
 
 /* Upcoming Shows Stylingg */
 
@@ -229,7 +242,40 @@ iframe {
    border-radius: 10px;
    border: 5px solid black;
 
-} 
+}
+
+/*About Styling */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.column img {
+  height: 300px;
+  filter: grayscale(100%);
+}
+#instruments {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.section3 h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.section3 p {
+  text-align: center;
+  font-size: 30px;
+}
+
 
 /* Footer Style */
 
@@ -326,4 +372,10 @@ iframe {
   height: 270px;
 }
 
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
 }
