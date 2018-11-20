@@ -187,10 +187,19 @@ img {
     to {color: #2F4F4F;}
 }
 
+.section0 h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+}
+.section0 {
+  margin-top: 200px;
+}
+
 /* Upcoming Shows Stylingg */
 
 .section1 {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .section1 h1 {
     text-align: center;
@@ -355,8 +364,7 @@ iframe {
     margin-bottom: -10px;
 }
 .jumbotron {
-    background-size: 100% 100%;
-    height: 450px;
+    height: 300px;
     margin-top: 20px;
     
 }
@@ -379,6 +387,37 @@ iframe {
   height: 270px;
 }
 
+}
+@media (max-width: 480px) {
+  .jumbotron {
+    height: 450px;
+    width: 100%;
+    margin-top: 50px;
+    line-height: 0;
+
+  }
+  .hero-text h1 {
+    font-size: 50px;
+    width: 100%;
+    letter-spacing: 2.5;
+    line-height: 1.5;
+   
+    opacity: .6;
+
+  }
+  .hero-text h3 {
+    margin-bottom: 200px;
+    font-size: 40px;
+  }
+  .hero-text a {
+    font-size: 60px;
+    margin-bottom: 300px;
+    display: none;
+  }
+  .section0 h1 {
+    font-size: 70px;
+    font-weight: bold;
+  }
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
