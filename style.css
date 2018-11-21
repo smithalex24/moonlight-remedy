@@ -15,16 +15,10 @@
 /* Top Menu */
 .navbar {
     background: none;
-    -o-transition: all .6s;
-    -moz-transition: all .6s;
-    -webkit-transition: all .6s;
-    -ms-transition: all .6s;
-    transition: all .6s;
-    backface-visibility: hidden;
+    overflow: hidden;
     opacity: .8;
     background-color: #734523!important;
     position: fixed;
-    transition: top 0.3s;
     top: 0;
     width: 100%;
     z-index: 1;
